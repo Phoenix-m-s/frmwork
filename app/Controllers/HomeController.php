@@ -12,12 +12,9 @@ class HomeController
 
     public function index()
     {
+        // در کنترلر
+        include __DIR__ . '/../Views/Templates/home.php';
 
-        $allUsers = $this->user->findAll();
-        print_r($allUsers);
-        die();
-
-        include __DIR__ . '/../app/Views/home.php';
     }
 
     public function insertUser()
